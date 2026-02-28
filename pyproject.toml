@@ -1,0 +1,16 @@
+[project]
+name = "anyio-racer"
+version = "0.1.0"
+description = "Built for brute-forcing tasks until a single task succeeds."
+readme = "README.md"
+authors = [
+    { name = "Vizonex", email = "VizonexBusiness@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "anyio>=4.12.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.1,<0.11.0"]
+build-backend = "uv_build"
