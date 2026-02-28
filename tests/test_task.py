@@ -25,4 +25,6 @@ async def test_enable_cancelling_when_no_winner_is_found():
         return i
 
     with pytest.raises(anyio.get_cancelled_exc_class()):
-        await race()
+        ret = await race(sleep, [(0.05,), (0.2,), (0.3,)])
+        
+
