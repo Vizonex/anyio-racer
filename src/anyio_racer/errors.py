@@ -1,5 +1,5 @@
 class RacerError(Exception):
-    """An Exception type raised by `aioracer`"""
+    """An Exception type raised by `anyio-racer`"""
 
 
 class RaceFailedError(RacerError):
@@ -11,3 +11,4 @@ __all__ = (
     "RaceFailedError",
     "RacerError",
 )
+
